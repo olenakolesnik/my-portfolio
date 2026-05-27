@@ -12,21 +12,21 @@ const projects = [
     },
     {
       number: "02",
+      title: "FocusFrame — Photography Website",
+      description:
+        "Responsive photography website with image gallery, category filtering, adaptive layout and modern UI.",
+      image: "/images/project-photograph.png",
+      tags: ["JavaScript", "HTML", "SCSS", "Responsive Design", "UI/UX", "Adaptive Layout"],
+      link: "https://olenakolesnik.github.io/FocusFrame/",
+    },
+    {
+      number: "03",
       title: "NoteHub",
       description:
         "Notes application built with Next.js App Router, TanStack Query and cookie authentication. Full CRUD, responsive design and clean UI.",
       image: "/images/project-notehub.png",
       tags: ["Next.js", "TypeScript", "TanStack Query", "Axios"],
       link: "https://05-notehub-nine-sable.vercel.app",
-    },
-    {
-      number: "03",
-      title: "Online Store",
-      description:
-        "E-commerce application with product filtering, search, cart, wishlist and localStorage. Built using vanilla JS, HTML, SCSS and REST API.",
-      image: "/images/project-store.png",
-      tags: ["JavaScript", "HTML", "SCSS", "REST API"],
-      link: "https://olenakolesnik.github.io/onlineStore/index.html",
     },
   ];
   
