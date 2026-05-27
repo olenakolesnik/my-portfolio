@@ -144,9 +144,12 @@ a {
   .hero {
     padding: 120px 0;
   }
-
+    .hero-image-wrapper {
+      height: 340px;
+    }
   .hero__inner {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .hero__visual {
@@ -722,4 +725,112 @@ a {
 .back-home:hover {
   transform: translateX(-4px);
   opacity: .8;
+}
+/* MOBILE BURGER */
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    top: 18px;
+  }
+
+  .header__inner {
+    position: relative;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .burger {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(14px);
+
+    cursor: pointer;
+    transition: .3s ease;
+  }
+
+  .burger span {
+    width: 20px;
+    height: 2px;
+    background: white;
+    border-radius: 999px;
+    transition: .3s ease;
+  }
+
+  .burger--open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger--open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 24px;
+
+    background: rgba(10, 10, 10, 0.96);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(-10px);
+
+    transition: .3s ease;
+  }
+
+  .nav--open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    font-size: 16px;
+  }
+
+  .nav a:hover {
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+  }
 }
