@@ -14,6 +14,7 @@ const skills = [
     "TanStack Query",
     "REST API",
     "VS Code",
+    "Node.js",
   ];
   
   export default function Skills() {

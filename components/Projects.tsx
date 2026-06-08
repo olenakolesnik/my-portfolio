@@ -7,7 +7,7 @@ const projects = [
       description:
         "Custom WooCommerce store for combat sports equipment. Built from scratch with custom theme, product filtering, wishlist, cart and SEO optimization.",
       image: "/images/project-sksport.png",
-      tags: ["WordPress", "WooCommerce", "PHP", "SEO"],
+      tags: ["WordPress", "WooCommerce", "PHP", "SEO", "HTML", "CSS"],
       link: "https://sksport.in.ua",
     },
     {
