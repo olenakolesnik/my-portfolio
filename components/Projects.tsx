@@ -1,8 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
-    {
-      number: "01",
+  {
+    number: "01",
+    title: "Campers Booking Platform",
+    description:
+      "TravelTrucks is a modern camper rental web application built with Next.js, TypeScript, and React Query.",
+    image: "/images/project-campers.png",
+    tags: ["Next.js (App Router)", "React", "TypeScript", "TanStack React Query", "Swiper", "CSS Modules", "React Icons", "Axios"],
+    link: "https://travel-trucks-delta-three.vercel.app",
+  },
+  {
+      number: "02",
       title: "SKSport",
       description:
         "Custom WooCommerce store for combat sports equipment. Built from scratch with custom theme, product filtering, wishlist, cart and SEO optimization.",
@@ -10,23 +20,14 @@ const projects = [
       tags: ["WordPress", "WooCommerce", "PHP", "SEO", "HTML", "CSS"],
       link: "https://sksport.in.ua",
     },
-    {
-      number: "02",
+  {
+      number: "03",
       title: "FocusFrame — Photography Website",
       description:
         "Responsive photography website with image gallery, category filtering, adaptive layout and modern UI.",
       image: "/images/project-photograph.png",
       tags: ["JavaScript", "HTML", "SCSS", "Responsive Design", "UI/UX", "Adaptive Layout"],
       link: "https://olenakolesnik.github.io/FocusFrame/",
-    },
-    {
-      number: "03",
-      title: "NoteHub",
-      description:
-        "Notes application built with Next.js App Router, TanStack Query and cookie authentication. Full CRUD, responsive design and clean UI.",
-      image: "/images/project-notehub.png",
-      tags: ["Next.js", "TypeScript", "TanStack Query", "Axios"],
-      link: "https://05-notehub-nine-sable.vercel.app",
     },
   ];
   
@@ -49,7 +50,9 @@ const projects = [
             {projects.map((project) => (
               <a href={project.link} className="project-card" key={project.title}>
                 <div className="project-image">
-                  <img src={project.image} alt={project.title} />
+                  <Image src={project.image}
+                    fill
+                    alt={project.title} />
                   <span>{project.number}</span>
                 </div>
   
