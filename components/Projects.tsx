@@ -3,7 +3,16 @@ import Link from "next/link";
 
 const projects = [
   {
-    number: "01",
+    id: "01",
+    title: "Barbershop Website",
+    description:
+      "Modern barbershop website with online booking and service information.",
+    image: "/images/project-barbershop.webp",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper", "React Icons"],
+    link: "https://barbershop-next-eight.vercel.app",
+  },
+  {
+    number: "02",
     title: "Campers Booking Platform",
     description:
       "TravelTrucks is a modern camper rental web application built with Next.js, TypeScript, and React Query.",
@@ -12,22 +21,13 @@ const projects = [
     link: "https://travel-trucks-delta-three.vercel.app",
   },
   {
-      number: "02",
+      number: "03",
       title: "SKSport",
       description:
         "Custom WooCommerce store for combat sports equipment. Built from scratch with custom theme, product filtering, wishlist, cart and SEO optimization.",
       image: "/images/project-sksport.png",
       tags: ["WordPress", "WooCommerce", "PHP", "SEO", "HTML", "CSS"],
       link: "https://sksport.in.ua",
-    },
-  {
-      number: "03",
-      title: "FocusFrame — Photography Website",
-      description:
-        "Responsive photography website with image gallery, category filtering, adaptive layout and modern UI.",
-      image: "/images/project-photograph.png",
-      tags: ["JavaScript", "HTML", "SCSS", "Responsive Design", "UI/UX", "Adaptive Layout"],
-      link: "https://olenakolesnik.github.io/FocusFrame/",
     },
   ];
   
