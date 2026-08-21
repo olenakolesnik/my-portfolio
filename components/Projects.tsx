@@ -2,23 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
+      {
+    number: "01",
+    title: "LearnLingo — Online Language School",
+    description:
+      "Modern language learning platform for finding online teachers, with authentication, filtering and personalized favorites.",
+    image: "/images/project-learnlingo.png",
+    tags: ["Next.js", "React", "TypeScript", "Firebase", "Zustand", "CSS Modules"],
+    link: "https://learn-lingo-rosy-six.vercel.app",
+  },
   {
-    id: "01",
+    number: "02",
     title: "Barbershop Website",
     description:
       "Modern barbershop website with online booking and service information.",
     image: "/images/project-barbershop.webp",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper", "React Icons"],
     link: "https://barbershop-next-eight.vercel.app",
-  },
-  {
-    number: "02",
-    title: "Campers Booking Platform",
-    description:
-      "TravelTrucks is a modern camper rental web application built with Next.js, TypeScript, and React Query.",
-    image: "/images/project-campers.png",
-    tags: ["Next.js (App Router)", "React", "TypeScript", "TanStack React Query", "Swiper", "CSS Modules", "React Icons", "Axios"],
-    link: "https://travel-trucks-delta-three.vercel.app",
   },
   {
       number: "03",

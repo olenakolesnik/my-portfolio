@@ -3,8 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const showcaseProjects = [
-  {
+    {
     id: "01",
+    title: "LearnLingo — Online Language School",
+    description:
+      "Modern language learning platform for finding online teachers, with authentication, filtering and personalized favorites.",
+    image: "/images/project-learnlingo.png",
+    tags: ["Next.js", "React", "TypeScript", "Firebase", "Zustand", "CSS Modules"],
+    link: "https://learn-lingo-rosy-six.vercel.app",
+  },
+  {
+    id: "02",
     title: "Barbershop Website",
     description:
       "Modern barbershop website with online booking and service information.",
@@ -13,7 +22,7 @@ const showcaseProjects = [
     link: "https://barbershop-next-eight.vercel.app",
   },
   {
-    id: "02",
+    id: "03",
     title: "Campers Booking Platform",
     description:
       "TravelTrucks is a modern camper rental web application built with Next.js, TypeScript, and React Query.",
@@ -22,7 +31,7 @@ const showcaseProjects = [
     link: "https://travel-trucks-delta-three.vercel.app",
   },
   {
-    id: "03",
+    id: "04",
     title: "SKSport",
     description:
       "Custom WooCommerce store for combat sports equipment. Built from scratch with custom theme, wishlist, cart, filtering and SEO optimization.",
@@ -31,7 +40,7 @@ const showcaseProjects = [
     link: "https://sksport.in.ua",
   },
   {
-    id: "04",
+    id: "05",
     title: "NoteHub",
     description:
       "Notes application built with Next.js App Router, TanStack Query and cookie authentication. Full CRUD and responsive UI.",
@@ -40,7 +49,7 @@ const showcaseProjects = [
     link: "https://05-notehub-nine-sable.vercel.app",
   },
   {
-    id: "05",
+    id: "06",
     title: "Online Store",
     description:
       "E-commerce application with filtering, search, wishlist and cart functionality.",
@@ -49,7 +58,7 @@ const showcaseProjects = [
     link: "https://olenakolesnik.github.io/onlineStore/index.html",
   },
   {
-    id: "06",
+    id: "07",
     title: "FocusFrame — Photography Website",
     description:
       "Responsive photography website with image gallery, category filtering, adaptive layout and modern UI.",
